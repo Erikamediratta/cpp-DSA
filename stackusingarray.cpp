@@ -155,4 +155,4 @@ int main() {
     postfixeval("231*+9-");
     prefixeval("-+23*19");
     return 0;
-}
+}//switch case can be added in main for different function choices
