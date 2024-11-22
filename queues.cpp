@@ -322,7 +322,7 @@ void dequeue5()
 
 void enqueuefront(int x)
 {
-    if(front==n-1 && rear==n-1)
+   if(front ==rear+1 || (front==0 && rear==n-1)) //or the other operation done before in circular array
     {
         cout<<"Queue is full"<<endl;
     }
@@ -345,7 +345,7 @@ void enqueuefront(int x)
 
 void enqueuerear(int x)
 {
-    if(front==n-1 && rear==n-1)
+    if(front ==rear+1 || (front==0 && rear==n-1))
     {
         cout<<"Queue is full"<<endl;
     }
@@ -369,7 +369,7 @@ void enqueuerear(int x)
 
 void dequeuefront()
 {
-    if(front==-1 && rear==-1)
+   if(front ==rear+1 || (front==0 && rear==n-1))
     {
         cout<<"Queue is empty"<<endl;
     }
@@ -387,7 +387,7 @@ void dequeuefront()
 }
 void dequeuerear()
 {
-    if(front==-1 && rear==-1)
+    if(front ==rear+1 || (front==0 && rear==n-1))
     {
         cout<<"Queue is empty"<<endl;
     }
